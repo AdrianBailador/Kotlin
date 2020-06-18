@@ -2,6 +2,7 @@ package android.app.myplayer
 
 import android.os.Bundle
 import android.os.Message
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
@@ -12,7 +13,9 @@ class MainActivity : AppCompatActivity() {
 
         //Toast.makeText(this, "Hello world", Toast.LENGTH_SHORT).show()
 
-        toast("Hello World")
+       // toast("Hello World")
+        val message: TextView = findViewById(R.id.message)
+        message.text = "Hello Kotlin!"
     }
 
     private fun toast(message: String){
